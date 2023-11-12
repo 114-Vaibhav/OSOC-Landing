@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Kanit:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+   <style>
+        @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Kanit:wght@600&display=swap');
+
+        * {
+            padding: 0%;
+            margin: 0%;
+
+        }
+
+        header {
+            background-color: rgb(251, 246, 240);
+            height: 200px;
+        }
+
+        main {}
+
+        .overlay {
+            position: absolute;
+            top: 5%;
+            left: 65%;
+            justify-content: space-between;
+            /* transform: translate(-50%, -50%); */
+            /* z-index: 1; */
+        }
+
+        .logo {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+        }
+
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+      height: auto;
+            /* opacity: %; */
+        }
+
+        nav a {
+            text-decoration: solid;
+            font-size: x-large;
+            color: white;
+            /* text-shadow: 3px 3px 3px; */
+            padding: 8px;
+            cursor: pointer;
+            transition: 5ms;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .box {
+            position: absolute;
+            height: 220px;
+            width: 300;
+            /* text-decoration-color: aliceblue; */
+            /* border: 2px solid black;
+            border-radius: 15px; */
+            top: 20%;
+            left: 50%;
+            padding: 10px;
+            background-color: rgb(0, 0, 0);
+            opacity: 80%;
+
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 1s;
+            overflow: auto;
+        }
+
+        .box p {
+
+            color: rgb(255, 255, 255);
+            font-family: 'Agbalumo', sans-serif;
+            font-size: large;
+
+        }
+
+        .box2 {
+            position: absolute;
+            /* height: 220px;
+            width: 300; */
+            /* text-decoration-color: aliceblue; */
+            /* border: 2px solid black;
+            border-radius: 15px; */
+            top: 85%;
+            left: 5%;
+            padding: 10px;
+            /* background-color: rgb(0, 0, 0); */
+            opacity: 80%;
+            font-size: large;
+            text-align: center;
+            padding: 40px 20px;
+            /* box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1); */
+            cursor: pointer;
+            transition: transform 1s;
+        }
+
+        .box2 p {
+
+            color: rgb(0, 0, 0);
+            font-family: 'Pacifico', sans-serif;
+            font-size: large;
+
+        }
+
+        footer {
+            position: absolute;
+            background-color: black;
+            top: 100%;
+            height: 150px;
+            opacity: 80%;
+            width: 100%;
+        }
+
+        footer ul a {
+
+
+            text-decoration: solid;
+            font-size: large;
+            color: white;
+            /* text-shadow: 3px 3px 3px; */
+
+            cursor: pointer;
+            transition: 5ms;
+            font-family: 'Kanit', sans-serif;
+
+        }
+
+        
+        .follow {
+            /* margin-left: 85%; */
+            float: right;
+            margin-right: 8%;
+        }
+
+        .heading {
+            color: aliceblue;
+            text-decoration: underline;
+            font-size: large;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .imglogo {
+
+            height: 100px;
+            width: 70px;
+        }
+
+        .logo2 {
+            position: absolute;
+            top: 5%;
+            left: 8%;
+
+        }
+        
+        .head {
+
+            color: aliceblue;
+            text-decoration: underline;
+            font-size: large;
+            font-family: 'Kanit', sans-serif;
+
+        }
+        .heading2 {
+        color: aliceblue;
+            text-decoration: underline;
+            font-size:medium;
+            font-family: 'Kanit', sans-serif;
+            float: initial;
+        }
+        
+        .copy {
+            position: absolute;
+            top: 80%;
+            left: 35%;
+
+        }
+          
+        .copy2 {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+
+        }
+       /* Default styles for the video element */
+#myVideo {
+    width: 100%; /* Set the video width to 100% of its container */
+    height: auto; /* Allow the video's height to adjust automatically to maintain aspect ratio */
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    #myVideo {
+        width: 100%; /* Adjust the video width for smaller screens */
+        height: auto; /* Allow the video's height to adjust automatically */
+    }
+}
+
+/* Media query for screens with a maximum width of 480px (even smaller screens) */
+@media (max-width: 480px) {
+    #myVideo {
+        width: 100%; /* Further adjust the video width for even smaller screens */
+        height: auto; /* Allow the video's height to adjust automatically */
+    }
+}
+
+    </style>
+    <title>OSOC</title>
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="D3.mp4" type="video/mp4">
+    </video>
+
+
+    <div class="overlay">
+        <nav>
+
+            <a href="">Home </a>
+            <a href="">Events</a>
+            <a href="">About </a>
+            <a href="">Team</a>
+            <a href="">Contact</a>
+        </nav>
+
+    </div>
+    <div class="logo">
+        <img src="nitt2.png" alt="NITT" height="100px">
+    </div>
+
+    <div class="box">
+        <p>We are an open source community initiated by MCA students of NIT Trichy. We learn, work and share the joys of
+            Open source technologies and wish to contribute to the Open Source Society. We also provide an encouraging
+            environment for development and research on Open source software through collaboration with the open source
+            community, business establishments, and other organizations. The community is expected to be a portal for
+            knowledge & education and to forge relationships with the open source world.</p>
+
+    </div>
+
+  <div class="box2">
+    <p>Welcome OSOC,The Technical Club of MCA NIT Trichy</p>
+  </div>
+
+
+
+
+    <footer>
+        <div class="footer">
+            <span class="logo2">
+                <span class="logo3">
+                    <img src="GoOnlineTools-image-downloader.png" alt="" class="imglogo">
+                </span>
+                <p class="head">Open Source Open Community</p>
+            </span>
+            <span class="copy" >
+            <p class="head">Copyright 2023 OSOC</p>
+        </span>
+        <div class="copy2">
+            <img src="nitt2.png" alt="NITT" height="100px">
+        </div>
+            <div class="follow">
+                <p class="heading">Follow Us</p>
+                <ul>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Website</a></li>
+                    <li><a href="">YouTube</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
